@@ -2,7 +2,7 @@ import Hero from "./Components/Hero/Hero";
 import Header from "./Components/Header/Header";
 import { useEffect, useState } from "react";
 
-const BASE_URL = "http://localhost:9000";
+const BASE_URL = "https://food-backend-zi2a.onrender.com/";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -32,12 +32,10 @@ const App = () => {
 
   if (loading) return <div>Loading....</div>;
 
-
-
   const filterFood = (type) => {
     if (type === "all") {
       setFilteredData(data);
-      
+
       return;
     }
 
@@ -45,7 +43,6 @@ const App = () => {
       item.type.toLowerCase().includes(type.toLowerCase()),
     );
     setFilteredData(filter);
-    
   };
 
   return (
@@ -54,7 +51,6 @@ const App = () => {
         data={data}
         setFilteredData={setFilteredData}
         filterFood={filterFood}
-        
       />
       <Hero data={filteredData} />
     </>
