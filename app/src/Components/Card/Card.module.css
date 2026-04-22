@@ -1,0 +1,39 @@
+.card_component {
+  display: flex;
+  width: 350px;
+  color: white;
+  background: rgba(65, 65, 65, 0.6);
+  border: 1px solid pink;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.card_img img {
+  border-radius: 50%;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 16px;
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card_content h1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card_content p {
+  font-size: 12px;
+}
+
+.card_content button {
+  align-self: flex-end;
+}
