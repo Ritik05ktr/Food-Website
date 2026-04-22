@@ -10,7 +10,7 @@ const Hero = ({ data }) => {
             <Card
               key={item.name}
               type={item.type}
-              image={`http://localhost:9000${item.image}`}
+              image={`https://food-backend-zi2a.onrender.com${item.image}`}
               name={item.name}
               price={`$${item.price}`}
               text={item.text}

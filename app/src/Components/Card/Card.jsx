@@ -1,7 +1,7 @@
 import Button from "../Button/Button";
 import styles from "./Card.module.css";
 
-const Card = ({image,name,price,text,type}) => {
+const Card = ({ image, name, price, text, type }) => {
   return (
     <div className={styles.card_component}>
       <div className={styles.card_img}>
@@ -14,7 +14,7 @@ const Card = ({image,name,price,text,type}) => {
           <p>{text}</p>
         </div>
 
-        <Button text={price}/>
+        <Button text={price} />
       </div>
     </div>
   );
