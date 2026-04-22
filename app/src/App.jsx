@@ -2,7 +2,7 @@ import Hero from "./Components/Hero/Hero";
 import Header from "./Components/Header/Header";
 import { useEffect, useState } from "react";
 
-const BASE_URL = "https://food-backend-zi2a.onrender.com/";
+const BASE_URL = "https://food-backend-zi2a.onrender.com";
 
 const App = () => {
   const [data, setData] = useState([]);
